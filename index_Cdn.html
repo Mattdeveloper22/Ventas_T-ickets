@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dejo estructura de la página con Cdn </title>
+  <meta name="description"
+    content="Mañana lo hago con los arcvhivos porque hay varias formas de hacer el empaquetado para que compile los archaivos  que no necesitemos y no tener archivos al dope.  Hay una forma de vincularlo e instalarlo con Node.Js Mañana lo hablamos eso.  Ahora dejo el modelo hecho d e la  página">
+  <meta name="author" content="">
+
+  <title>estructura y modelo del diseño</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="/css/estilos.css">
+
+
+
+
+</head>
+
+<body>
+  <div class="page">
+
+    <header class="sticky-top bg-secondary">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="index.html#inicio">T-ickets</a>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label" for="flexSwitchCheckChecked"></label>
+          </div>
+          <button class="navbar-toggler fw-bold navbar-dark" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/index_Cdn.html#inicio">Inicio</a>
+              <a class="nav-link" href="#">Eventos</a>
+              <a class="nav-link" href="#"></a>
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--Navbar-End-->
+    </header>
+
+
+
+    <main>
+
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar Evento" aria-label="search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+
+      <main>
+        <div id="carouselExampleDark" class="carousel carousel-light slide mt-1" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./img/mia.jpg" class="d-block w-100 " alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First slide label</h5>
+                <p>Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="/img/carousel_1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/img/mia.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="backround-opcional text-center text-light mt-1 bg-danger fw-bold "><span id="formulario">NOMPALIDECE
+          </span>
+        </div>
+
+        <div class="caja-overlay   banner-bg  mt-1">
+          <span class="banner-bg text-center  ">background</span>
+        </div>
+        <section class="d-flex flex-column align-items-center justify-content-center destacados">
+          <h2 class="text-center fw-bold text-dark mt-3 mb-3">DESTACADOS</h2>
+
+          <div class="card w-75">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Los Fundamentalistas</h5>
+              <p class="card-text">Todavía hay stock. Sólo Campo. <br> <br> <span class="fw-bold text-danger"> Sede
+                  Huracan</span></p>
+              <a href="#" class="btn btn-dark fw-bold ">Comprar</a>
+            </div>
+          </div>
+
+          <div class="card w-75 mt-2 ">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Ciro y los Persas</h5>
+              <p class="card-text">Quedan pocas entradas y sólo campo. <br> <br> <span class="fw-bold text-danger">
+                  River Plate</span></p>
+              <a href="#" class="btn btn-dark fw-bold">Comprar</a>
+            </div>
+          </div>
+
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne ">
+                  jueves 15
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the first item's accordion body.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Próximo Lunes 19 - A Todo Rock
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this
+                  being
+                  filled
+                  with some actual content.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Miércoles 21 - Lo Mejor!
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                  <code>.accordion-flush</code> class. This is tthe third item's accordion body. Nothing more exciting
+                  happening
+                  here in terms of content, but just filling up the space to make it look, at least at first glance, a
+                  bit
+                  more
+                  representative of how this would look in a real-world application.
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </section>
+        <div class="container px-4 py-5" id="custom-cards">
+          <h2 class="pb-2 border-bottom text-center fw-bold ">Fechas y eventos</h2>
+
+          <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="background-image: url('unsplash-photo-1.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                        class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill" />
+                      </svg>
+                      <small>Earth</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3" />
+                      </svg>
+                      <small>3d</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="background-image: url('unsplash-photo-2.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                        class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill" />
+                      </svg>
+                      <small>Pakistan</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3" />
+                      </svg>
+                      <small>4d</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                style="background-image: url('unsplash-photo-3.jpg');">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                  <ul class="d-flex list-unstyled mt-auto">
+                    <li class="me-auto">
+                      <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                        class="rounded-circle border border-white">
+                    </li>
+                    <li class="d-flex align-items-center me-3">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#geo-fill" />
+                      </svg>
+                      <small>California</small>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <svg class="bi me-2" width="1em" height="1em">
+                        <use xlink:href="#calendar3" />
+                      </svg>
+                      <small>5d</small>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subs</button>
+            </div>
+          </form>
+        </div>
+
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter" />
+                </svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram" />
+                </svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook" />
+                </svg></a></li>
+          </ul>
+        </div>
+        </footer>
+
+        <!-- Back to Top -->
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-danger rounded-circle btn-floating btn-lg" id="btn-back-to-top">
+          <i class="fas fa-arrow-up"></i>
+        </button>
+
+
+  </div>
+
+  <script src="/assets/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+  <script>
+    AOS.init({
+      duration: 1000
+    });
+  </script>
+</body>
+
+</html>
